@@ -1,5 +1,11 @@
-function soma (x : number, y: number) : number {
-    return x + y;
-}
+import express, {Request, Response} from 'express';
 
-console.log(soma(10,20));
+const app = express ();
+
+app.get('/', function(req: Request, res: Response){
+    res.send("Olá mundo")
+});
+
+app.listen(3000, function(){
+    console.log("Servidor rodando na porta 3000")
+});

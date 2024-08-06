@@ -6,6 +6,8 @@
 - `npm i typescript`
 - `npx tsc --init` (inicializa o typescript na máquina)
 - `npm i ts-node`
+- `npm i express`
+- `npm i --save-dev @types/express`
 
 Para executar
 - `npm run dev` (desenvolvimento)
