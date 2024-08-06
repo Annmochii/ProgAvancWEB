@@ -13,7 +13,7 @@ Para executar
 
 ## Código do tsconfic.json
 
-``
+```
 {  
   "compilerOptions": {  
     "target": "es2016",                           
@@ -26,4 +26,4 @@ Para executar
     "skipLibCheck": true                              
   }  
 }  
-``
+```
