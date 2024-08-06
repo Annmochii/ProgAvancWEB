@@ -14,16 +14,16 @@ Para executar
 ## Código do tsconfic.json
 
 ``
-{
-  "compilerOptions": {
-    "target": "es2016",                                  
-    "module": "commonjs",                                
-    "rootDir": "./src",                                  
-    "outDir": "./build",
-    "esModuleInterop": true,                             
+{  
+  "compilerOptions": {  
+    "target": "es2016",                           
+    "module": "commonjs",                               
+    "rootDir": "./src",                                 
+    "outDir": "./build",  
+    "esModuleInterop": true,                               
     "forceConsistentCasingInFileNames": true,            
-    "strict": true,                                     
-    "skipLibCheck": true                                 
-  }
-}
+    "strict": true,                                       
+    "skipLibCheck": true                              
+  }  
+}  
 ``
