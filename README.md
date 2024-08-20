@@ -74,7 +74,7 @@ Depois de instalado, basta atualizar o script de execução do projeto para:
 
 - https://www.prisma.io/docs/getting-started/quickstart
 
-# Instalando o Prisma
+### Instalando o Prisma
 
 - `npm install prisma --save-dev`
 - `npx prisma init --datasource-provider sqlite`
