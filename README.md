@@ -73,7 +73,7 @@ Depois de instalado, basta atualizar o script de execução do projeto para:
 
 ## Configurando o Prisma ORM
 
-- https://www.prisma.io/docs/getting-started/quickstart
+https://www.prisma.io/docs/getting-started/quickstart
 
 ### Instalando o Prisma
 
@@ -141,6 +141,8 @@ datasource db {
 
 ## Métodos do HTTP
 
-
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods
 
 ## Status Codes do HTTP
+
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#respostas_de_erro_do_servidor
