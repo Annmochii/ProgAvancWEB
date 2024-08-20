@@ -52,6 +52,7 @@ Para executar
         "esbenp.prettier-vscode",
         "prisma.prisma",
         "Prisma.prisma-insider"
+        "rangav.vscode-thunder-client"
     ]
 }
 ```
@@ -74,10 +75,20 @@ Depois de instalado, basta atualizar o script de execução do projeto para:
 
 - https://www.prisma.io/docs/getting-started/quickstart
 
-# Instalando o Prisma
+### Instalando o Prisma
 
-- `npm install prisma --save-dev`
-- `npx prisma init --datasource-provider sqlite`
+Primeiro instale o Prisma CLI como uma dependencia de desenvolvimento com o comando:
+
+```
+  npm install prisma --save-dev
+```
+
+Depois configure o Prisma ORM com o comando `init`:
+```
+  npx prisma init --datasource-provider sqlite
+```
+
+### Schema de dados
 
 Vamos configurar o Prisma ORM com o seguinte schema de dados
 
@@ -121,3 +132,15 @@ datasource db {
 }
 
 ```
+
+### Criando o banco de dados
+
+```
+  npx prisma migrate dev --name init
+```
+
+## Métodos do HTTP
+
+
+
+## Status Codes do HTTP
