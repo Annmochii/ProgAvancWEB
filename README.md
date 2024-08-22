@@ -53,6 +53,7 @@ Para executar
         "prisma.prisma",
         "Prisma.prisma-insider"
         "rangav.vscode-thunder-client"
+        "mikestead.dotenv"
     ]
 }
 ```
