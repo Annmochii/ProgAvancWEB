@@ -150,6 +150,18 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#respostas_de_erro_do_se
 
 ## .env
 
-````
-  DATABASE_URL=file:./dev.db
 ```
+  DATABASE_URL=file:./dev.db
+  GROQ_API_KEY=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
+```
+  
+## Trabalhando com IA
+
+https://console.groq.com/
+
+Instale a biblioteca Groq JavaScript:
+
+```
+  npm install --save groq-sdk
+```
+
