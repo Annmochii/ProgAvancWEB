@@ -1,11 +1,20 @@
 import { Router } from "express";
 
-import PostController from "../controllers/PostController";
+import postController from "../controllers/PostController";
 
-const PostRouter = Router();
+const postRouter = Router();
+
 
 //Listar posts
-PostRouter.get("/posts", PostController.listPost);
+postRouter.get("/posts", postController.listPosts);
 
+//Inserir posts
+postRouter.post("/post", postController.createPost);
 
-export default PostRouter;
+//Atualizar posts
+postRouter.put("/post/:id", postController.updatePost);
+
+//Deletar posts
+postRouter.delete("/post/:id", postController.deletePost);
+
+export default postRouter;

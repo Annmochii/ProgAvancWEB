@@ -20,6 +20,7 @@ CREATE TABLE "Comment" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     "title" TEXT NOT NULL,
     "content" TEXT NOT NULL,
+    "evaluation" TEXT,
     "published" BOOLEAN NOT NULL DEFAULT false,
     "authorId" INTEGER NOT NULL,
     "postId" INTEGER NOT NULL,
