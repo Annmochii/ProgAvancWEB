@@ -186,3 +186,13 @@ Instale a biblioteca Groq JavaScript:
   npm install --save groq-sdk
 ```
 
+## Criptografia de senha
+
+https://www.npmjs.com/package/bcrypt?activeTab=readme
+
+Instale a biblioteca que irá criptografar as senhas:
+
+```
+  npm i bcrypt
+  npm i --save-dev @types/bcrypt
+```
