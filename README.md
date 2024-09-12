@@ -35,7 +35,7 @@ Se você estiver desevolvendo, o ideal é que, ao invés do `npm run build`, o c
 npm run dev
 ~~~
 
-### Extensões do VSCode recomendadas:
+### Extensões do VSCode recomendadas para o desenvolvimento:
 ```
 {
     "recommendations": [
