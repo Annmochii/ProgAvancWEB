@@ -167,7 +167,7 @@ Aperte o botão "F1" no teclado e digite "Prettier" e crie o arquivo de configur
 }
 ```
 
-## Adicionando a confirugação "Format on save"
+## Adicionando a configuração para formatar ao salvar
 
 1. Aperte o botão "F1" no teclado;
 2. Digite "Settings";
