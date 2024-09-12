@@ -16,10 +16,16 @@ Esse projeto contém os códigos de cada aula de Programação Avançada para We
   - Groq
 
 > Extensões do VSCode recomendadas:
-  - VS Code Icons
-  - Prettier
-  - Prisma
-  - Prisma Insider
-  - Thunder Client
-  - DotEnv
+```
+{
+    "recommendations": [
+        "vscode-icons-team.vscode-icons",
+        "esbenp.prettier-vscode",
+        "prisma.prisma",
+        "Prisma.prisma-insider"
+        "rangav.vscode-thunder-client"
+        "mikestead.dotenv"
+    ]
+}
+```
  
