@@ -31,12 +31,14 @@ Esse projeto contém os códigos de cada aula de Programação Avançada para We
 
 ## Como usar:
 
-Primeiro, abra o terminal e digite:
+Primeiro, navegue pelas branchs e selecione a aula que deseja revisar.  
+
+Em seguida, abra o terminal e digite:
 ~~~
 npm install
 ~~~
 
-Em seguida, você pode executar o projeto através do código:
+Você pode executar o projeto através do código:
 ~~~
 npm run build
 ~~~
