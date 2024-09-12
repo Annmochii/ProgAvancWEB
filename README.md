@@ -15,7 +15,7 @@ Esse projeto contém os códigos de cada aula de Programação Avançada para We
   - ts-node-dev
   - Groq
 
-> Extensões do VSCode recomendadas:
+### Extensões do VSCode recomendadas:
 ```
 {
     "recommendations": [
@@ -28,4 +28,20 @@ Esse projeto contém os códigos de cada aula de Programação Avançada para We
     ]
 }
 ```
- 
+
+## Como usar:
+
+Primeiro, abra o terminal e digite:
+~~~
+npm install
+~~~
+
+Em seguida, você pode executar o projeto através do código:
+~~~
+npm run build
+~~~
+
+Se você estiver desevolvendo, o ideal é que, ao invés do `npm run build`, o código usado seja:
+~~~
+npm run dev
+~~~
