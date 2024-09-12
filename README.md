@@ -1,6 +1,6 @@
 # Aula de Programação Avançada para Web
 
-## Lista de comandos usados no projeto  
+## Lista de comandos usados no projeto
 
 - `npm init -y`
 - `npm i typescript`
@@ -9,24 +9,25 @@
 - `npx tsc`
 
 Para executar
+
 - `npm run dev` (desenvolvimento)
 - `npm run build` (execução)
 
 ## Código do tsconfic.json
 
 ```
-{  
-  "compilerOptions": {  
-    "target": "es2016",                           
-    "module": "commonjs",                               
-    "rootDir": "./src",                                 
-    "outDir": "./build",  
-    "esModuleInterop": true,                               
-    "forceConsistentCasingInFileNames": true,            
-    "strict": true,                                       
-    "skipLibCheck": true                              
-  }  
-}  
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
 ```
 
 ## Scripts que estão sendo utilizados no package.json
@@ -85,6 +86,7 @@ Primeiro instale o Prisma CLI como uma dependencia de desenvolvimento com o coma
 ```
 
 Depois configure o Prisma ORM com o comando `init`:
+
 ```
   npx prisma init --datasource-provider sqlite
 ```
