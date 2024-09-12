@@ -16,20 +16,6 @@ Esse projeto contém os códigos de cada aula de Programação Avançada para We
   - Groq
   - Bcrypt
 
-### Extensões do VSCode recomendadas:
-```
-{
-    "recommendations": [
-        "vscode-icons-team.vscode-icons",
-        "esbenp.prettier-vscode",
-        "prisma.prisma",
-        "Prisma.prisma-insider"
-        "rangav.vscode-thunder-client"
-        "mikestead.dotenv"
-    ]
-}
-```
-
 ## Como usar:
 
 Primeiro, navegue pelas branchs e selecione a aula que deseja revisar.  
@@ -48,3 +34,17 @@ Se você estiver desevolvendo, o ideal é que, ao invés do `npm run build`, o c
 ~~~
 npm run dev
 ~~~
+
+### Extensões do VSCode recomendadas:
+```
+{
+    "recommendations": [
+        "vscode-icons-team.vscode-icons",
+        "esbenp.prettier-vscode",
+        "prisma.prisma",
+        "Prisma.prisma-insider"
+        "rangav.vscode-thunder-client"
+        "mikestead.dotenv"
+    ]
+}
+```
