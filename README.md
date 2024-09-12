@@ -17,7 +17,7 @@ Esse projeto contém os códigos de cada aula de Programação Avançada para We
 
 > Extensões do VSCode recomendadas:
   - VS Code Icons
-- Prettier
+  - Prettier
   - Prisma
   - Prisma Insider
   - Thunder Client
