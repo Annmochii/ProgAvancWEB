@@ -148,12 +148,33 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods
 
 https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#respostas_de_erro_do_servidor
 
-## .env
+## Configurando o .env
 
 ```
   DATABASE_URL=file:./dev.db
   GROQ_API_KEY=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
 ```
+
+## Configurando o Prettier
+
+Aperte o botão "F1" no teclado e digite "Prettier" e crie o arquivo de configuração e confirme que ele esteja da seguinte forma:
+
+```
+  {
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true
+}
+```
+
+## Adicionando a confirugação "Format on save"
+
+1. Aperte o botão "F1" no teclado;
+2. Digite "Settings";
+3. Selecione "Preferences: Open Settings (UI)";
+4. Selecione no menu o divisor "Text Editor";
+5. Selecione no menu o subdivisor "Formatting";
+6. Marque o checkbox que se refere à função "Format on save".
   
 ## Trabalhando com IA
 
