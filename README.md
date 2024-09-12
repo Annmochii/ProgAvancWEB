@@ -14,6 +14,7 @@ Esse projeto contém os códigos de cada aula de Programação Avançada para We
   [![PrismaORM](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)](https://www.prisma.io/docs/getting-started/quickstart)
   - ts-node-dev
   - Groq
+  - Bcrypt
 
 ### Extensões do VSCode recomendadas:
 ```
