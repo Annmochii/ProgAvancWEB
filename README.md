@@ -198,3 +198,11 @@ Instale a biblioteca que irá criptografar as senhas:
   npm i bcrypt
   npm i --save-dev @types/bcrypt
 ```
+
+# JsonWebToken
+
+https://www.npmjs.com/package/jsonwebtoken
+
+```
+  npm install jsonwebtoken
+```
