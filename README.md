@@ -199,10 +199,17 @@ Instale a biblioteca que irá criptografar as senhas:
   npm i --save-dev @types/bcrypt
 ```
 
-# JsonWebToken
+## JsonWebToken
 
 https://www.npmjs.com/package/jsonwebtoken
 
 ```
   npm install jsonwebtoken
+  npm i --save-dev @types/jsonwebtoken
 ```
+
+## Gerando a private key
+
+https://cryptotools.net/rsagen
+
+- Utilize a key lenght de 2048.
