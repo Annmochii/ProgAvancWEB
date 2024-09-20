@@ -1,6 +1,8 @@
-import { Request, Response } from "express";
+import {Request, Response} from 'express';
 
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from '@prisma/client';
+import AiConversation from '../utils/AIEvaluetion';
+import { CreateHashPassword } from '../utils/HashPasswords';
 
 const prisma = new PrismaClient();
 
@@ -8,6 +10,7 @@ class UserController {
     constructor(){
     }
     async listUser(req: Request, res: Response){
+        
         try {
             const users = await prisma.user.findMany();
   
@@ -24,12 +27,17 @@ class UserController {
         try {
             const userdata = req.body;
         
-            if (!userdata.email) {
+            if (!userdata.email && !userdata.password) {
               return res.status(400).json({
                 status: 400,
-                message: "Você precisa passar o email no corpo da requisição",
+                message:
+                  "Você precisa passar o email e a senha no corpo da requisição",
               });
             }
+
+            userdata.password = await CreateHashPassword(userdata.password);
+
+            console.log(userdata.password);
         
             console.log(userdata);
             const newuser = await prisma.user.create({

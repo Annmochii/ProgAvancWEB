@@ -3,6 +3,7 @@ CREATE TABLE "User" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     "email" TEXT NOT NULL,
     "name" TEXT
+    "password" TEXT NOT NULL DEFAULT '123456'
 );
 
 -- CreateTable
@@ -30,3 +31,4 @@ CREATE TABLE "Comment" (
 
 -- CreateIndex
 CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
+

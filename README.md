@@ -151,7 +151,6 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods
 https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#respostas_de_erro_do_servidor
 
 ## Configurando o .env
-## Configurando o .env
 
 ```
   DATABASE_URL=file:./dev.db
@@ -199,3 +198,5 @@ Instale a biblioteca que irá criptografar as senhas:
   npm i bcrypt
   npm i --save-dev @types/bcrypt
 ```
+
+- JWT para criar tokens HTTP
