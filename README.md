@@ -62,6 +62,8 @@ Para executar
 
 ## Instalando o ts-node-dev
 
+[![TS-NODE-DEV](https://img.shields.io/badge/TS--NODE--DEV-red?style=for-the-badge&logo=npm&logoColor=white&link=https://www.npmjs.com/package/ts-node-dev)](https://www.npmjs.com/package/ts-node-dev)
+
 O ts-node-dev nos ajuda a ter mais produtividade uma vez que ele reinicializar o servidor automaticamente a medida que salvamos o projeto.
 
 ```
@@ -76,7 +78,7 @@ Depois de instalado, basta atualizar o script de execução do projeto para:
 
 ## Configurando o Prisma ORM
 
-https://www.prisma.io/docs/getting-started/quickstart
+[![PrismaORM](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)](https://www.prisma.io/docs/getting-started/quickstart)
 
 ### Instalando o Prisma
 
@@ -190,7 +192,7 @@ Aperte o botão "F1" no teclado e digite "Prettier" e crie o arquivo de configur
 
 ## Trabalhando com IA
 
-https://console.groq.com/
+[![GroqCloud](https://img.shields.io/badge/GroqCloud-f55036?style=for-the-badge&logo=groq&logoColor=white&link=https://console.groq.com/playground)](https://console.groq.com/playground)
 
 Instale a biblioteca Groq JavaScript:
 
@@ -200,7 +202,7 @@ Instale a biblioteca Groq JavaScript:
 
 ## Criptografia de senha
 
-https://www.npmjs.com/package/bcrypt?activeTab=readme
+[![bcrypt](https://img.shields.io/badge/bcrypt-red?style=for-the-badge&logo=npm&logoColor=white&link=https://www.npmjs.com/package/bcrypt?activeTab=readme)](https://www.npmjs.com/package/bcrypt?activeTab=readme)
 
 Instale a biblioteca que irá criptografar as senhas:
 
@@ -211,7 +213,7 @@ Instale a biblioteca que irá criptografar as senhas:
 
 ## Criar tokens HTTP
 
-https://www.npmjs.com/package/jsonwebtoken
+[![jsonwebtoken](https://img.shields.io/badge/jsonwebtoken-red?style=for-the-badge&logo=npm&logoColor=white&link=https://www.npmjs.com/package/jsonwebtoken)](https://www.npmjs.com/package/jsonwebtoken)
 
 ```
   npm install jsonwebtoken
