@@ -105,6 +105,7 @@ model User {
   email    String    @unique
   name     String?
   posts    Post[]
+  password String    @default("123456")
   comments Comment[]
 }
 
@@ -122,11 +123,19 @@ model Comment {
   id        Int     @id @default(autoincrement())
   title     String
   content   String
+  evaluation String?
   published Boolean @default(false)
   author    User    @relation(fields: [authorId], references: [id])
   authorId  Int
   post      Post    @relation(fields: [postId], references: [id])
   postId    Int
+}
+
+model Session{
+  id        Int     @id @default(autoincrement())
+  tokken String
+  createdAt DateTime @default(now())
+  experiationAt DateTime?
 }
 
 datasource db {

@@ -4,7 +4,6 @@ import UserController from "../controllers/UserController";
 
 const UserRouter = Router();
 
-
 //Listar usuários
 UserRouter.get("/users", UserController.listUser);
 
