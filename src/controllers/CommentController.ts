@@ -20,7 +20,6 @@ class CommentController{
     }
     async createComment(req: Request, res: Response){        
         const commentData = req.body;
-        
         try{                                        
                 const response = await AiConversation(commentData.content).then();
                 console.log(response)
