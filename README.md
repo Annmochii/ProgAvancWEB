@@ -50,7 +50,7 @@ npm run dev
         "Prisma.prisma-insider"
         "rangav.vscode-thunder-client"
         "mikestead.dotenv"
-        qwtel.sqlite-viewer
+        "qwtel.sqlite-viewer"
     ]
 }
 ```
