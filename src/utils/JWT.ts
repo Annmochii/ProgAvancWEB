@@ -33,3 +33,11 @@ XVmUNbgAIusZ31oeIeJ789u7vUpNQer1m/AbSyRjibpxkXaiMkeBoDHUiXDlsVYA
 Z+8P3ZRLy3mA+890QXD2xJGe2gMuvgNNVA2qfogkVzbj10o4v4PQPEg=
 -----END RSA PRIVATE KEY-----`
 
+export async function generateJwToken(user: User) {
+    const token = jwt.sign(JSON.stringify(user), privateKey, {algorithm: 'RS256'});
+    return token;
+}
+
+export async function verifyToken(token: string){
+    return null
+}
