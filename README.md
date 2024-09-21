@@ -42,7 +42,7 @@ Para executar
 
 ## Projeto para usar múltiplas versões do NodeJS na mesma máquina
 
-- https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script
+[![NVM](https://img.shields.io/badge/NVM-0d1117?style=for-the-badge&logo=github&logoColor=white&link=https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script)](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script)
 
 ## Algumas extensões do VSCode recomendadas
 
@@ -156,11 +156,11 @@ datasource db {
 
 ## Métodos do HTTP
 
-https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods
+[![HTTP Methods](https://img.shields.io/badge/HTTP%20Methods-0e0d13?style=for-the-badge&logo=mdn web docs&logoColor=8cb4ff&link=https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods)](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods)
 
 ## Status Codes do HTTP
 
-https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#respostas_de_erro_do_servidor
+[![HTTP Status Codes](https://img.shields.io/badge/HTTP%20Status%20Codes-0e0d13?style=for-the-badge&logo=mdn web docs&logoColor=8cb4ff&link=https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#respostas_de_erro_do_servidor)](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#respostas_de_erro_do_servidor)
 
 ## Configurando o .env
 
@@ -222,7 +222,7 @@ Instale a biblioteca que irá criptografar as senhas:
 
 ## Gerando a private key
 
-https://cryptotools.net/rsagen
+[![RSA Key Generator](https://img.shields.io/badge/RSA%20Key%20Generator-343a40?style=for-the-badge&link=https://cryptotools.net/rsagen)](https://cryptotools.net/rsagen)
 
 - Utilize a key lenght de 2048.
 
