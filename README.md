@@ -174,7 +174,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#respostas_de_erro_do_se
 Aperte o botão "F1" no teclado e digite "Prettier" e crie o arquivo de configuração e confirme que ele esteja da seguinte forma:
 
 ```
-  {
+{
   "tabWidth": 2,
   "useTabs": false,
   "semi": true
@@ -225,4 +225,3 @@ Instale a biblioteca que irá criptografar as senhas:
 https://cryptotools.net/rsagen
 
 - Utilize a key lenght de 2048.
-
