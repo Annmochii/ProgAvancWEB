@@ -226,3 +226,57 @@ Instale a biblioteca que irá criptografar as senhas:
 
 - Utilize a key lenght de 2048.
 
+## Aula 08/10:
+
+### Middleware
+
+Por exemplo, no `UserRoutes.ts`, entre o `UserRouter.get("/users",` e o ` UserController.listUser);` inserimos o middleware  `function(req: Request, res: Response, next: NextFunction){...}` que irá definir quem poderá acessar o método.
+
+Exemplo de Middleware:
+
+```
+  function(req: Request, res: Response, next: NextFunction){
+    //@ts-ignore
+    if(1==2)
+    {
+        console.log("Passei pelo middleware ...")
+        next();
+    }
+    else
+    {
+        return res.status(401).json({
+            message: "Você não está autorizado!"
+        });
+    }
+}
+```
+
+Para deixar o código mais limpo e organizado, podemos passar essas informações para um arquivo `src/middlewares/Middleware.ts`:
+
+```
+import { Request, Response, NextFunction } from "express";
+
+class UserMiddleware {
+    constructor(){
+
+    }
+
+    async analyseToken(req: Request, res: Response, next: NextFunction){
+        const token = req.headers["authorization"];
+
+        if(!token){
+            return res.status(401).json({
+                message: "Nenhum token identificado"
+            });
+        }
+
+        next();
+    }
+}
+
+export default new UserMiddleware();
+```
+
+E no `UserRoutes.ts`, substituimos o middleware por: `UserMiddleware.analyseToken`.
+
+Para casa: aprofundar sobre o middleware
