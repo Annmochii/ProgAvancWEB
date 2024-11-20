@@ -107,6 +107,24 @@ class UserController {
             });
           }
     }
+
+    async listAuthor (req: Request, res: Response){
+      try {
+        const id = req.params.id;
+
+        await prisma.user.findUnique({
+          where: {
+            id: parseInt(id),
+          },
+        });
+      }catch(error){
+          console.log(error);
+          return res.status(500).json({
+              error: error
+          })
+      
+      }
+    }
 }
 
 export default new UserController();

@@ -17,4 +17,7 @@ UserRouter.put("/user/:id", UserMiddleware.analyseToken, UserController.updateUs
 //Deletar usuários
 UserRouter.delete("/user/:id", UserMiddleware.analyseToken, UserController.deleteUser);
 
+//Listar autor do post
+UserRouter.get("/author/:id", UserMiddleware.analyseToken , UserController.listAuthor);
+
 export default UserRouter;
