@@ -112,11 +112,18 @@ class UserController {
       try {
         const id = req.params.id;
 
-        await prisma.user.findUnique({
+        let user = await prisma.user.findUnique({
           where: {
             id: parseInt(id),
           },
         });
+
+        if(user)
+          return res.json({
+            status: 200,
+            author  : user,
+          });
+
       }catch(error){
           console.log(error);
           return res.status(500).json({
