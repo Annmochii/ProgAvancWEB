@@ -5,7 +5,17 @@ import { CheckUserPassword } from '../utils/HashPasswords';
 import { generateJwToken } from '../utils/JWT';
 
 const prisma = new PrismaClient();
+class UserFiltrado{
+    id: number = 0;
+    name: string="";
+    email: string="";
 
+    constructor(name:string, email: string, id: number){
+        this.id = id;
+        this.email = email;
+        this.name = name;
+    }
+}
 class AuthController{
     constructor(){}
 
@@ -41,10 +51,13 @@ class AuthController{
                     message: "Usuário ou senha inválidos!"
                 })
             }
+            const userFiltrado =new UserFiltrado(user.name??"",user.email,user.id)
+
             return res.json({
                 status: 200,
                 message: "logado com sucesso!",
-                token: await generateJwToken(req.body)
+                user: userFiltrado,
+                token: await generateJwToken(user)
             })
         }catch(error){
             console.log(error);
