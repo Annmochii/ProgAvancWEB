@@ -1,19 +1,23 @@
-import { Router } from "express";
+import { NextFunction, Request, Response, Router } from "express";
 
 import UserController from "../controllers/UserController";
+import UserMiddleware from "../middlewares/UserMiddleware";
 
 const UserRouter = Router();
 
 //Listar usuários
-UserRouter.get("/users", UserController.listUser);
+UserRouter.get("/users", UserMiddleware.analyseToken , UserController.listUser);
 
 //Inserir usuários
-UserRouter.post("/user", UserController.createUser);
+UserRouter.post("/user", UserMiddleware.analyseToken, UserController.createUser);
 
 //Atualizar usuários
-UserRouter.put("/user/:id", UserController.updateUser);
+UserRouter.put("/user/:id", UserMiddleware.analyseToken, UserController.updateUser);
 
 //Deletar usuários
-UserRouter.delete("/user/:id", UserController.deleteUser);
+UserRouter.delete("/user/:id", UserMiddleware.analyseToken, UserController.deleteUser);
+
+//Listar autor do post
+UserRouter.get("/author/:id", UserMiddleware.analyseToken , UserController.listAuthor);
 
 export default UserRouter;

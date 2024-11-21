@@ -86,6 +86,29 @@ class PostController{
             })
         }
     }
+
+    async getPost(req: Request, res: Response){
+        try{
+            const id = req.params.id;
+
+            const post = await prisma.post.findUnique({
+                where: {
+                  id: parseInt(id),
+                },
+              });
+
+              if(post)
+                return res.json({
+                  status: 200,
+                  post : post,
+                });
+
+            }catch(error){
+                res.json({                
+                    error: error,
+                })
+            }
+    }
 }
 
 export default new PostController();
