@@ -66,11 +66,79 @@ class AuthController{
             })
         }
     }
-    async signup(){
+    async signup(req: Request, res: Response) {
+        try {
+            const { name, email, password } = req.body;
 
+            if (!name || !email || !password) {
+                return res.json({
+                    status: 400,
+                    message: "Faltam campos no body: name, email ou password"
+                });
+            }
+            
+            console.log(1);
+
+            const existingUser = await prisma.user.findFirst({
+                where: {
+                    email
+                }
+            });
+
+            if (existingUser) {
+                return res.json({
+                    status: 409,
+                    message: "E-mail já está cadastrado!"
+                });
+            }
+
+            console.log(2);
+
+            // Criptografa a senha
+            const hashedPassword = await bcrypt.hash(password, 10);
+
+            console.log(3);
+
+            // Cria o novo usuário
+            const newUser = await prisma.user.create({
+                data: {
+                    name,
+                    email,
+                    password: hashedPassword
+                }
+            });
+
+            console.log(4);
+
+            const userFiltrado = new UserFiltrado(newUser.name as string, newUser.email, newUser.id);
+            
+            console.log(5);
+
+            return res.json({
+                status: 201,
+                message: "Usuário criado com sucesso!",
+                user: userFiltrado
+            });
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({
+                error: error
+            });
+        }
     }
-    async signout(){
 
+    async signout(req: Request, res: Response) {
+        try {
+            return res.json({
+                status: 200,
+                message: "Usuário deslogado com sucesso!"
+            });
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({
+                error: error
+            });
+        }
     }
 }
 export default new AuthController;
